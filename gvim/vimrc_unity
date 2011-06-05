@@ -1,0 +1,8 @@
+"source $VIM/vimrc_unity
+
+" vim:set ft=vim ts=4 sw=4 sts=4 sta ai bs=2:
+au BufNewFile,BufRead *.js,*.cs :noremap <F1> :silent OpenBrowserSearch -unity <C-R>=expand("<cword>")<CR><CR>
+
+" Unity용 자동 완성
+set complete+=k
+set dict+=$VIM/unityAutoCompletion.txt
